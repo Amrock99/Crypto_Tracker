@@ -17,7 +17,7 @@ function App() {
         getData().then((res) => {
             setCoins(res.data);
         });
-    }, 10000);
+    }, 1000);
     // useEffect(() => {
     //   axios
     //   .get(
