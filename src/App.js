@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <ClipLoader className="Loader" color={"#ffb100"} loading={loading} size={50} margin={10}/>
+        <ClipLoader color={"#ffb100"} loading={loading} size={50} margin={10}/>
       ) : (
         <>
           <div className="cryptoHeader">
@@ -55,6 +55,7 @@ function App() {
                   symbol={coin.symbol}
                   high={coin.high_24h}
                   low={coin.low_24h}
+                  priceChange={coin.price_change_24h}
                 />
               );
             })}
